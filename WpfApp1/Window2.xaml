@@ -1,0 +1,90 @@
+﻿<Window x:Class="WpfApp1.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window2" WindowStartupLocation="CenterScreen"
+        Background="  #d8af29  " Height="403" Width="802"
+        WindowStyle="None" ResizeMode="NoResize" Foreground=" #0c1180 ">
+    <Grid>
+        <Border  BorderThickness="10,10,10,10" BorderBrush="  #5bff80  "/>
+        <Button x:Name="ExitButton" Content="X" Margin="764,0,0,372"
+            RenderTransformOrigin="14.279,0.5" Background="Green"
+            Foreground="DarkRed" Click="ExitButton_Click"/>
+        <TextBlock x:Name="Welcome" FontSize="40" TextAlignment="Center" Text="Welcome " Foreground=" #ea0000 " Background=" #67abd1 " Margin="15,19,38,330"/>
+        <TabControl Margin="15,73,38,10" Background=" #7d00d3 " TabStripPlacement="Left" Foreground=" #e03817 ">
+            <TabItem Header="SELECT" Margin="-2,-2,-31,-38" Background=" #160e5c " Foreground=" #ff0000 " BorderBrush=" #38f634 " BorderThickness="5">
+                <ScrollViewer>
+                    <Grid Margin="0,0,0,274" Width="653">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Enter Media Name :" FontSize="30" Margin="10,1,-11,39" Grid.Column="1" Grid.RowSpan="2"/>
+                        <TextBox x:Name="MediaName" Margin="6,6,-7,4" Grid.Row="1" FontSize="20" Grid.Column="1"/>
+                        <Button x:Name="SelectButtonConfirm" Content="CONFIRM" Grid.Row="1" FontSize="20" 
+                Background=" #164e0f "
+                Foreground=" #ff0065 " BorderThickness="5"
+                BorderBrush="Gold" Grid.Column="1"
+                Height="75" Width="130" Margin="204,41,-7,-76" Click="SelectButtonConfirm_Click"/>
+                        <TextBlock Text="All Media Names :" Grid.Column="0" HorizontalAlignment="Center" FontSize="30" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="MediaNames" Grid.Column="0" Background=" #00fff6 " FontSize="18" Margin="23,40,0,-276"/>
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="EDIT" Margin="-2,28,-31,-65" Background=" #160e5c " Foreground=" #ff0000 " BorderBrush=" #38f634 " BorderThickness="5" MouseDown="TabItem_MouseDown">
+                <Grid Margin="-62,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <ScrollViewer Grid.Column="0" Grid.ColumnSpan="2" Margin="93,0,348,0">
+                        <Grid >
+                            <TextBlock TextAlignment="Center" FontSize="30" VerticalAlignment="Top" Text="Seleted Media :" Height="42" Margin="33,0,33,0"/>
+                            <TextBlock x:Name="SelectedMediaList" Margin="0,47,0,0" />
+                        </Grid>
+                    </ScrollViewer>
+                    <TextBlock Text="Enter Media Name: " FontSize="30" Margin="172,0,-48,0" Grid.Column="1"/>
+                    <TextBox x:Name="MediaNameToDelete" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="333" Margin="154,61,0,0" Height="34" FontSize="20"/>
+                    <Button Background=" #164e0f "
+                Foreground=" #ff0065 " BorderBrush="Gold" BorderThickness="5" Content="Confirm Delete" FontSize="20" x:Name="DeleteButton" Grid.Column="1" Margin="172,112,28,128" Click="DeleteButton_Click"/>
+                    <Button x:Name="UpdateSelectedMedia" Background=" #164e0f "
+                Foreground=" #ff0065 " BorderBrush="Gold" BorderThickness="5" Content="Update List" FontSize="20" Grid.Column="1" Margin="172,205,28,33" Click="UpdateSelectedMedia_Click" />
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="BuyTabItem" Header="BUY" Margin="-9,65,-31,-109" Background=" #160e5c " Foreground=" #ff0000 " BorderBrush=" #38f634 " BorderThickness="5">
+                <Grid Margin="31,0,0,0" MouseDown="Grid_MouseDown">
+                    <TextBlock 
+                    Text="Click On The Screen To Update Your Bill : " 
+                    Margin="10,85,-9,171" Height="58"
+                     FontSize="30"/>
+                    <TextBlock x:Name="Bill" 
+                     Margin="22,117,-21,134"
+                      TextAlignment="Center"         FontSize="40"/>
+                    <Button x:Name="BuyButton" Content="BUY!" FontSize="20"
+                Background=" #164e0f "
+                Foreground=" #ff0065 " BorderThickness="5"
+                BorderBrush="Gold"
+                Height="75" Margin="107,193,225,46" Click="BuyButton_Click" />
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="CHANCE" Margin="-2,110,-31,-153" Background=" #160e5c " Foreground=" #ff0000 " BorderBrush=" #38f634 " BorderThickness="5">
+                <Grid>
+                    <Button x:Name="ChanseButton" Content="TRY YOUR CHANCE !!!" FontSize="20"
+                Background=" #164e0f "
+                Foreground=" #ff0065 " BorderThickness="5"
+                BorderBrush="Gold"
+                Height="75" Margin="119,111,213,128" Click="ChanseButton_Click" />
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+    </Grid>
+</Window>

@@ -1,0 +1,26 @@
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.AssemblyReference.cache
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.SuggestedBindingRedirects.cache
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\MainWindow.baml
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\Window1.g.cs
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\Window1.baml
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\Window2.g.cs
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\Window2.baml
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\Seller Log In.g.cs
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\Seller Log In.baml
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\Media Info.g.cs
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\Media Info.baml
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\Customer Login.g.cs
+F:\Elmos\AP\Seri 06\WpfApp1\WpfApp1\obj\Debug\Customer Login.baml

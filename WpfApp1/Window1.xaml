@@ -1,0 +1,122 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="SellerWindow"  WindowStartupLocation="CenterScreen"
+        Background="  #33e537  " Height="403" Width="892"
+        WindowStyle="None" ResizeMode="NoResize">
+    <Grid Margin="0,0,10,253">
+        <Grid Margin="0,0,10,205">
+            <Border  BorderThickness="10,10,10,10" BorderBrush=" #da176d " Margin="0,0,-21,-403">
+
+            </Border>
+            <TextBlock x:Name="NameTextBlock"
+            Foreground=" #3968ed " Margin="20,10,5,-68"
+            FontSize="24" FontFamily="Kristen ITC"
+             TextAlignment="Center" Background=" #ad0a0a"/>
+            <Button x:Name="ExitButton" Content="X" Margin="872,0,-21,-21"
+            RenderTransformOrigin="14.279,0.5" Background="Green"  
+            Foreground="DarkRed" Click="ExitButton_Click"/>
+            <TabControl Margin="20,69,5,-393" BorderBrush="Aqua"
+            TabStripPlacement="Left" Background=" #f8b4f3  ">
+                <TabItem Margin="-1,-2,-11,-32" Header="ADD" Background=" #0d3077 " Foreground="Gold" BorderBrush="Aqua" FontSize="17" FontWeight="Bold">
+                    <Grid Margin="0,0,0,-2" Width="658" RenderTransformOrigin="0.606,0.855">
+                        <TextBlock Text="Select Media Type:" Margin="18,7,-18,-7" Foreground=" #0b5a1e "/>
+                        <RadioButton x:Name="BookRadioButton" Content="Book" Margin="28,34,-28,-34" Checked="BookRadioButton_Checked"/>
+                        <RadioButton x:Name="VideoRadioButton" Content="Video" Margin="111,34,-111,-34" Checked="VideoRadioButton_Checked"/>
+                        <RadioButton x:Name="MagaineRaadioButton" Content="Magazine" Margin="197,34,-197,-34" Checked="MagaineRaadioButton_Checked"/>
+                        <TextBlock Background=" #ff8a00 " HorizontalAlignment="Left"
+                         VerticalAlignment="Top" Width="287" Height="26" Margin="18,74,0,0" Text="Enter Media's Name: "/>
+                        <TextBlock Background=" #ff8a00 " HorizontalAlignment="Left"
+                         VerticalAlignment="Top" Width="287" Height="26" Margin="329,74,0,0" Text="Enter Media's Price:"/>
+                        <TextBlock x:Name="MediaSpecialProperty1" Background=" #ff8a00 " HorizontalAlignment="Left"
+                         VerticalAlignment="Top" Width="287" Height="26" Margin="329,161,0,0"/>
+                        <TextBlock Background=" #ff8a00 " HorizontalAlignment="Left"
+                         VerticalAlignment="Top" Width="287" Height="26" Margin="18,161,0,0"><Run Text="Enter Media's ID: "/><LineBreak/><Run/></TextBlock>
+                        <TextBlock x:Name="MediaSpecialProperty2" Background=" #ff8a00 " HorizontalAlignment="Left"
+                            VerticalAlignment="Top" Width="287" Height="26" Margin="18,247,0,0"/>
+                        <TextBox x:Name="MediaNameTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="287" Margin="18,117,0,0"/>
+                        <TextBox x:Name="MediaSpecialProperty2TextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="287" Margin="18,285,0,0"/>
+                        <TextBox x:Name="MediaSpecialProperty1TextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="287" Margin="329,209,0,0"/>
+                        <TextBox x:Name="MediaIDTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="287" Margin="18,209,0,0"/>
+                        <TextBox x:Name="MediaPriceTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="287" Margin="329,117,0,0"/>
+                        <Button x:Name="AddButton" Content="CONFIRM"
+                         Margin="416,258,130,9" Background=" #164e0f "
+                        Foreground=" #ff0065 " BorderThickness="5"
+                        BorderBrush="Gold" Click="AddButton_Click" />
+                    </Grid>
+                </TabItem>
+
+                <TabItem Margin="-1,32,-11,-70" Header="DELETE" Background=" #0d3077 " Foreground="Gold" BorderBrush="Aqua" FontSize="17" FontWeight="Bold">
+                    <Grid Margin="0,0,0,-2" Width="658">
+                        <TextBlock Text="ENTER MEDIA'S ID :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,22,0,0"
+                          Foreground=" #e01111 " FontSize="26" />
+                        <TextBox x:Name="MediaID" HorizontalAlignment="Left" VerticalAlignment="Top"
+                          Foreground=" #f10f0f " FontSize="25" Width="355" Height="47" Margin="29,88,0,0" />
+                        <Button x:Name="ConfirmDeleteButton" Content="CONFIRM"
+                         Margin="432,77,96,168" Background=" #164e0f "
+                        Foreground=" #ff0065 " BorderThickness="5"
+                        BorderBrush="Gold" Click="ConfirmDeleteButton_Click"
+                                />
+                    </Grid>
+                </TabItem>
+
+                <TabItem Margin="-1,70,-11,-98" Header="SEARCH" Background=" #0d3077 " Foreground="Gold" BorderBrush="Aqua" FontSize="17" FontWeight="Bold">
+                    <Grid Margin="0,0,0,-2" Width="658">
+                        <TextBlock Text="ENTER MEDIA'S ID :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,22,0,0"
+                          Foreground="DarkBlue" FontSize="26" />
+                        <TextBox x:Name="MediaID2" HorizontalAlignment="Left" VerticalAlignment="Top"
+                          Foreground=" #f10f0f " FontSize="25" Width="355" Height="47" Margin="29,88,0,0" />
+                        <Button x:Name="ConfirmSearchButton" Content="CONFIRM SEARCH"
+                         Margin="420,70,65,167" Background=" #164e0f "
+                        Foreground=" #ff0065 " BorderThickness="5"
+                        BorderBrush="Gold" Click="ConfirmSearchButton_Click" 
+                                />
+
+                    </Grid>
+                </TabItem>
+
+                <TabItem Margin="-1,98,-11,-130" Header="SHOW CUSTOMERS" Background=" #0d3077 " Foreground="Gold " BorderBrush="Aqua" FontSize="17" FontWeight="Bold" MouseDown="TabItem_MouseDown">
+                    <ScrollViewer>
+                        <Grid Margin="0,0,0,-2" Width="647" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock TextAlignment="Center" Background=" #073413 " Text="Students:" Grid.Column="0" HorizontalAlignment="Left" FontSize="22"  Margin="8,-1,0,288" Width="208" Grid.ColumnSpan="2"  />
+                            <TextBlock x:Name="StudentData" HorizontalAlignment="Center" FontSize="22" Grid.Column="0" Margin="0,32,0,0" Width="196" Foreground=" #481c7d "/>
+                            <TextBlock TextAlignment="Center" Background=" #073413 " Text="Teachers:" Grid.Column="1" HorizontalAlignment="Left" FontSize="22"  Margin="8,-1,0,288" Width="212"  />
+                            <TextBlock x:Name="TeacherData" HorizontalAlignment="Center" FontSize="22" Grid.Column="1" Margin="0,32,0,0" Width="196" Foreground=" #481c7d "/>
+                            <TextBlock TextAlignment="Center" Background=" #073413 " Text="Customers:" Grid.Column="2" HorizontalAlignment="Left" FontSize="22"  Margin="8,-1,0,288" Width="212"  />
+                            <TextBlock x:Name="CustomerData" HorizontalAlignment="Center" FontSize="22" Grid.Column="2" Margin="0,32,0,0" Width="196" Foreground=" #481c7d "/>
+                        </Grid>
+                    </ScrollViewer>
+                </TabItem>
+
+                <TabItem Margin="-1,128,-11,-159" Header="CHANGE PASSWORD" Background=" #0d3077 " Foreground="Gold" BorderBrush="Aqua" FontSize="17" FontWeight="Bold">
+                    <Grid x:Name="TimeChangedTextBlock" Margin="0,0,0,-2" Width="658">
+                        <TextBlock Margin="13,1,83,272" 
+                    Foreground=" #0f144e " FontWeight="Bold"
+                    FontSize="24" Text="ENTER YOUR NEW PASSWORD :"/>
+                        <TextBox x:Name="NewPasswordTextBox" HorizontalAlignment="Left" Margin="10,35,0,250" Width="645" FontSize="22"/>
+                        <Button x:Name="ConfirmNewPasswordButton" Content="CONFIRM"
+                         Margin="182,257,364,10" Background=" #164e0f "
+                        Foreground=" #ff0065 " BorderThickness="5"
+                        BorderBrush="Gold" Click="ConfirmNewPassword"/>
+                        <TextBlock Text="Last Time Changed :"
+                        Margin="13,100,10,95" Foreground=" #0f144e " FontWeight="Bold"
+                        FontSize="24"/>
+                        <TextBlock Name="LastTimeChanged" Margin="10,144,113,118"
+                        Foreground=" #65147f "/>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Grid>
+
+
+    </Grid>
+</Window>
